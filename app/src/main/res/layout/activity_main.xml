@@ -4,30 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".MainActivity"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/txtName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Artist Name" />
-
-    <Spinner
-        android:id="@+id/spinGenre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/genres"></Spinner>
-
+    android:gravity="center"
+    >
     <Button
-        android:id="@+id/btnAddArtist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Artist" />
-<android.support.v7.widget.RecyclerView
-    android:id="@+id/recyclerList"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:text="Go To Network Activity"
+        android:id="@+id/btnNetwork"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To FireBase Activity"
+        android:id="@+id/btnFireBase"
+        />
 
-</android.support.v7.widget.RecyclerView>
 </LinearLayout>
